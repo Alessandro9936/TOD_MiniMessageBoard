@@ -1,0 +1,52 @@
+body {
+  padding: 50px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-style: italic;
+}
+
+a {
+  padding: 0.4rem 1rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+
+  transition: background-color 0.2s ease-in;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+}
+
+.messages {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+.message {
+  cursor: pointer;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+
+  border-radius: 10px;
+  box-shadow: 0rem 0rem 0.6rem rgb(95, 95, 248, 0.25);
+}
+
+.message:hover {
+  transform: translateX(15px);
+}

@@ -1,0 +1,57 @@
+<form method="post" action="/new">
+  <h1>New message</h1>
+  <input
+    type="text"
+    id="messageAuthor"
+    name="messageAuthor"
+    placeholder="Your name..."
+    required
+  />
+  <textarea
+    name="messageText"
+    id="messageText"
+    cols="30"
+    rows="10"
+    placeholder="Your message..."
+    required
+  ></textarea>
+  <button type="submit" value="Submit">Submit Message to Board</button>
+</form>
+
+<style>
+  h1 {
+    font-style: italic;
+    font-family: sans-serif;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+  }
+  input,
+  textarea {
+    padding: 0.4rem;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+
+    transition: background-color 0.2s ease-in;
+  }
+
+  button:hover {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+  }
+</style>

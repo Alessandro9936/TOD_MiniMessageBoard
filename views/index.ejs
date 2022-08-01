@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <a href="/new" class="new-message">New message</a>
+    <ul class="messages">
+      <% messages.forEach(message => { %>
+      <li class="message">
+        <span class="user-message"
+          ><b style="font-size: 18px">Username: </b><%= message.user %></span
+        >
+        <span class="text-message"
+          ><b style="font-size: 18px">Message: </b><%= message.text %></span
+        >
+        <span class="data-message"
+          ><b style="font-size: 18px">Date: </b><%= message.added %></span
+        >
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
